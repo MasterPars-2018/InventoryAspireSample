@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.2.1" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>8b52b95a-9d39-4ba9-915a-f0683f1e239b</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.2.1" />
+    <PackageReference Include="Aspire.Hosting.SqlServer" Version="9.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InventoryAspireSample.API\InventoryAspireSample.API.csproj" />
+    <ProjectReference Include="..\InventoryAspireSample.ServiceDefaults\InventoryAspireSample.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\InventoryAspireSample.WEB\InventoryAspireSample.WEB.csproj" />
+  </ItemGroup>
+
+</Project>
