@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\InventoryAspireSample.API\InventoryAspireSample.API.csproj" />
+    <ProjectReference Include="..\InventoryAspireSample.BlazorServer\InventoryAspireSample.BlazorServer.csproj" />
     <ProjectReference Include="..\InventoryAspireSample.ServiceDefaults\InventoryAspireSample.ServiceDefaults.csproj" />
     <ProjectReference Include="..\InventoryAspireSample.WEB\InventoryAspireSample.WEB.csproj" />
   </ItemGroup>

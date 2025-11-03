@@ -22,4 +22,11 @@ builder.AddProject<Projects.InventoryAspireSample_WEB>(name: "frontend")
 
 
 
+builder.AddProject<Projects.InventoryAspireSample_BlazorServer>("inventoryaspiresample-blazorserver")
+    .WithReference(api)
+    .WaitFor(api)
+    .WithExternalHttpEndpoints();
+
+
+
 builder.Build().Run();
